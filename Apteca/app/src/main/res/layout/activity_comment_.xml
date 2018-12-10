@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.asus.an_teca.Comment_Activity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/intpduit"
+       >
+
+
+        <Button
+            android:id="@+id/buttonAddRoom"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/colorAccent"
+            android:text="Add Room"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edittextRoom"
+            android:layout_width="280dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/buttonAddRoom"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter chat room name" />
+
+        <ListView
+            android:id="@+id/list1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/button3"
+            android:layout_weight="100"
+            android:divider="@null" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
